@@ -6,7 +6,6 @@ Y=y(ones(size(y,2),1),:);
 f6plot1=0.5-((sin(sqrt(X.^2+Y.^2))).^2-0.5)./((1+0.001.*(X.^2+Y.^2)).^2);
 %figure(1)
 subplot(2,3,1)
-hold all
 fig3d=surf(X,Y,f6plot1,'EdgeColor','none','LineStyle','none','FaceLighting','phong');
 title('3D - Evaluation Function vs Change in x&y-values');
 xlabel('x-parameter');
