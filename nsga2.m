@@ -21,11 +21,11 @@ close all;
 
 CostFunction=@Cost;
 
-npop=1000;                                    % main population size - default 50
+npop=50;                                    % main population size - default 50
 nvar=2;                                     % number of unknown variables - set to 3 for original @Cost
 nobj=numel(CostFunction(zeros(1,nvar)));    % number of objective functions
 
-maxit=10;                      % maximum number of iterations - default 100
+maxit=200;                      % maximum number of iterations - default 100
 
 VarMin=-100;                      % lower bound of unknown variables - set to -5 for original @Cost
 VarMax= 100;                      % upper bound of unknown variables - set to 5 for original @Cost
